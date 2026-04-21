@@ -483,6 +483,46 @@ body {
   font-size: 13px;
 }
 
+/* ---- PAIN POINT BANNER ---- */
+.pain {
+  background: linear-gradient(135deg, rgba(233,69,96,.08), rgba(245,166,35,.08));
+  border-top: 1px solid rgba(233,69,96,.2);
+  border-bottom: 1px solid rgba(233,69,96,.2);
+  padding: 48px 0;
+  text-align: center;
+}
+.pain__quote {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.pain__quote::before { content: '"'; }
+.pain__quote::after  { content: '"'; }
+.pain__answer {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ---- FEATURE HIGHLIGHT ---- */
+.feature-card--highlight {
+  border-color: rgba(233,69,96,.35);
+  background: linear-gradient(160deg, rgba(233,69,96,.06) 0%, var(--bg-card) 60%);
+}
+
+/* ---- FOOTER IDENTITY ---- */
+.footer__identity {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  text-align: center;
+  width: 100%;
+  padding: 12px 0 4px;
+}
+.footer__identity a { color: var(--text-muted); text-decoration: underline; }
+.footer__identity a:hover { color: var(--text); }
+
 /* ---- RESPONSIVE ---- */
 @media (max-width: 640px) {
   .nav__links a:not(.btn) { display: none; }
