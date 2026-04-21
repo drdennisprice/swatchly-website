@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swatchly — Color Palettes for Web Designers</title>
+  <meta name="description" content="Extract, save, and apply color palettes directly in your browser. Built for web designers who work across multiple clients." />
+  <meta property="og:title" content="Swatchly — Color Palettes for Web Designers" />
+  <meta property="og:description" content="Extract, save, and apply color palettes directly in your browser." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner container">
+      <a href="/" class="nav__logo">
+        <span class="logo-dot"></span>Swatchly
+      </a>
+      <div class="nav__links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://chrome.google.com/webstore" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Add to Chrome</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__badge">Free Chrome Extension</div>
+      <h1 class="hero__title">Your color toolkit,<br><span class="gradient-text">always in the sidebar.</span></h1>
+      <p class="hero__sub">Extract colors and fonts from any website, save them to named palettes, and apply them to your design elements — all without leaving your browser.</p>
+      <div class="hero__actions">
+        <a href="https://chrome.google.com/webstore" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Add to Chrome — Free
+        </a>
+        <a href="#features" class="btn btn--ghost btn--lg">See how it works</a>
+      </div>
+      <p class="hero__note">No account required · Works on Chrome 95+</p>
+    </div>
+
+    <!-- Palette preview -->
+    <div class="hero__preview container">
+      <div class="preview-card">
+        <div class="preview-card__header">
+          <span class="preview-card__name">Brand Identity</span>
+          <div class="preview-card__actions">
+            <button class="preview-btn">✦</button>
+            <button class="preview-btn">⬇</button>
+            <button class="preview-btn">⋯</button>
+          </div>
+        </div>
+        <div class="preview-card__section-label">Colors</div>
+        <div class="preview-swatches">
+          <div class="swatch" style="background:#1a1a2e;" title="#1A1A2E"></div>
+          <div class="swatch" style="background:#16213e;" title="#16213E"></div>
+          <div class="swatch" style="background:#0f3460;" title="#0F3460"></div>
+          <div class="swatch" style="background:#e94560;" title="#E94560"></div>
+          <div class="swatch" style="background:#f5a623;" title="#F5A623"></div>
+          <div class="swatch" style="background:#ffffff; border: 1px solid #333;" title="#FFFFFF"></div>
+        </div>
+        <div class="preview-card__section-label">Fonts</div>
+        <div class="preview-fonts">
+          <div class="font-badge"><span class="role">H1</span><span class="family">Inter · 700 · 32px</span></div>
+          <div class="font-badge"><span class="role">Body</span><span class="family">Inter · 400 · 16px</span></div>
+          <div class="font-badge"><span class="role">Caption</span><span class="family">Inter · 400 · 12px</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything a designer needs,<br>nothing they don't.</h2>
+      <div class="features__grid">
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🎨</div>
+          <h3>Extract from any page</h3>
+          <p>Scan a live website and pull its dominant colors and fonts — frequency-sorted, deduplicated, with CSS variable boost.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">💾</div>
+          <h3>Named palettes</h3>
+          <p>Save colors and fonts to labeled palettes — one per client, project, or mood board. Persists across browser sessions.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🖱️</div>
+          <h3>One-click apply</h3>
+          <p>Pick a color from your palette, click any element on the page — it applies as text or background color instantly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🔤</div>
+          <h3>Font detection</h3>
+          <p>Captures typefaces by role — H1, H2, H3, Body, Caption, Nav, Button — with size and weight. Never lose a font stack.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">📋</div>
+          <h3>Copy for AI</h3>
+          <p>Export enriched palette JSON with one click — includes HEX, RGB, HSL, and fonts — ready to paste into ChatGPT, Gemini, or Copilot for analysis.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">📦</div>
+          <h3>JSON export</h3>
+          <p>Download any palette as a structured JSON file. Integrate with your design tools, tokens pipeline, or version control.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-label">Workflow</div>
+      <h2 class="section-title">Extract → Save → Apply</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h3>Visit a website</h3>
+            <p>Open Swatchly's sidebar on any page. Hit "Scan" to extract all colors and fonts used on that site.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h3>Save to a palette</h3>
+            <p>Choose which colors and fonts to keep. Add them to a named palette — organize by client or project.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h3>Apply anywhere</h3>
+            <p>Switch to Apply mode, pick a palette color, and click any element to change its color — or copy HEX to clipboard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Simple, transparent pricing.</h2>
+      <div class="pricing__grid">
+
+        <div class="pricing-card">
+          <div class="pricing-card__tier">Free</div>
+          <div class="pricing-card__price">$0<span>/forever</span></div>
+          <p class="pricing-card__desc">Perfect for getting started or occasional use.</p>
+          <ul class="pricing-card__features">
+            <li>✓ Unlimited color picker (eyedropper)</li>
+            <li>✓ Up to 3 color palettes</li>
+            <li>✓ Up to 20 colors total</li>
+            <li>✓ Up to 2 font palettes</li>
+            <li>✓ Up to 10 fonts total</li>
+            <li>✓ JSON export</li>
+            <li>✓ Copy for AI (✦)</li>
+          </ul>
+          <a href="https://chrome.google.com/webstore" class="btn btn--outline btn--full" target="_blank" rel="noopener">Add to Chrome</a>
+        </div>
+
+        <div class="pricing-card pricing-card--pro">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__tier">Pro</div>
+          <div class="pricing-card__price">$5<span>/month</span></div>
+          <div class="pricing-card__alt">or $49/year — save 18%</div>
+          <p class="pricing-card__desc">For designers who work across multiple clients and projects.</p>
+          <ul class="pricing-card__features">
+            <li>✓ Everything in Free</li>
+            <li>✓ Unlimited palettes</li>
+            <li>✓ Unlimited colors</li>
+            <li>✓ Unlimited font palettes</li>
+            <li>✓ Unlimited fonts</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full">Get Pro</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common questions.</h2>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>Does Swatchly require an account?</summary>
+          <p>No. Swatchly works entirely within your browser using local storage. No sign-up, no server, no cloud sync required.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Which browsers are supported?</summary>
+          <p>Swatchly is a Chrome extension and requires Chrome 95 or later. Support for other Chromium-based browsers (Edge, Brave) is planned.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Are my palettes saved if I reinstall or switch computers?</summary>
+          <p>Palettes are stored in Chrome's local extension storage and are tied to your browser profile. They persist across browser restarts but are not synced across devices on the Free plan.</p>
+        </details>
+        <details class="faq__item">
+          <summary>What does "Copy for AI" do?</summary>
+          <p>The ✦ button copies your palette as enriched JSON — including HEX, RGB, HSL values for every color, plus font roles, families, sizes, and weights — along with a suggested prompt for paste into ChatGPT, Gemini, or Copilot for color theory or accessibility analysis.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Can I apply colors to any element on any website?</summary>
+          <p>Yes — Swatchly injects a lightweight content script when you activate Apply mode. Click any visible DOM element to apply your selected palette color as text or background. For elements that can't be directly accessed, HEX is always copied to clipboard.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2>Start building better color palettes today.</h2>
+      <p>Free to install. No account needed.</p>
+      <a href="https://chrome.google.com/webstore" class="btn btn--primary btn--lg" target="_blank" rel="noopener">Add Swatchly to Chrome</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="/" class="nav__logo">
+        <span class="logo-dot"></span>Swatchly
+      </a>
+      <div class="footer__links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <p class="footer__copy">© 2026 Swatchly. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
